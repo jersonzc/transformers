@@ -1,0 +1,32 @@
+\documentclass[9pt]{beamer}
+\usepackage{custom}
+\usepackage{import}
+
+\title{Title}
+\subtitle{Sub title}
+\author{Oscar Rosas, Sharon Chullunquía y Jerson Zúñiga}
+\institute[UNSA]{Universidad Nacional de San Agustín de Arequipa}
+\date{\today}
+\titlegraphic{logo-UNSA}
+
+\begin{document}
+
+\titlepage
+
+\begin{frame}
+  \frametitle{Contenido}
+  \tableofcontents
+\end{frame}
+
+\import{slides/}{01-tema1.tex}
+\import{slides/}{02-tema2.tex}
+\import{slides/}{03-tema3.tex}
+\import{slides/}{04-tema4.tex}
+
+\begin{frame}[allowframebreaks]{Referencias}
+  \nocite{*}
+  \bibliography{main}
+  \bibliographystyle{abbrv}
+\end{frame}
+
+\end{document}
